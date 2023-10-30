@@ -1,18 +1,18 @@
 
 # Readme.md
 
-Car Lease Platform
+## Car Lease Platform
 
 A Spring Boot MVC project with JWT authentication.
 
 
-Description
+## Description
 
 A Car-Lease-Platform API to maintain customer data, vehicle information and calculate lease rate for customers based on desired input. 
 
 ## Authors
 
-- [@akanksha padhi](https://www.github.com/akankshapadhi)
+[@akanksha padhi](https://www.github.com/akankshapadhi)
 
 
 ## Technologies
@@ -110,7 +110,6 @@ Sample body (JSON format) to enter the customer data
 {"name":“Myname","password":"pass","street":"beta","house":"G1","zip":"D1","place":"leiden","email":“myemail@abc.com","phone":"716878208"}
 
 ```
-## Car-Lease-Application
+## Car-Lease-Application structure
 
-
-
+![Structure](https://github.com/akankshapadhi/Car-Lease-Application/assets/148763641/55218a9b-840a-4816-af45-a47410d9294a)
