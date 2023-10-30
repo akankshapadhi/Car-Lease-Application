@@ -38,42 +38,42 @@ JUnit
 1. Execute command
 
 ```bash
-  git clone https://_____
+git clone https://github.com/akankshapadhi/Car-Lease-Application.git
 ```
 
 2. Execute command
 
 ```bash
-  mvn install
+mvn install
 ```
 3. Execute command
 
 ```bash
-  mvn spring-boot:run
+mvn spring-boot:run
 ```
-4. The local server is running on
+4. Open the following URL in POSTMAN
 
 ```bash
-  http:localhost:8080/
+localhost:8080/
 ```
 
 5. Configure datasource in 
 ```bash
-  main/rescources/application.properties
+main/rescources/application.properties
 ```
 ```bash
-  spring.datasource.url = jdbc:mysql://localhost:3306/testdb
-  spring.datasource.username = root
-  spring.datasource.password = password
-  spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MYSQLDialect
-  spring.jpa.hibernate.ddl-auto = update
+spring.datasource.url = jdbc:mysql://localhost:3306/testdb
+spring.datasource.username = root
+spring.datasource.password = password
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MYSQLDialect
+spring.jpa.hibernate.ddl-auto = update
 ```
 ## User authentication
 
 1. Connect to server
 
 ```bash
-  http:localhost:8080/token
+  localhost:8080/token
 ```
 
 2. Use POST and add the following in body (JSON format) to generate token.
@@ -86,46 +86,12 @@ JUnit
 3. Token will be generated and displayed in the body. 
 
 ```javascript
-Sample Token (Update during running program)
+Sample Token
 
 {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaXNzIjoibWVAbWUuY29tIiwic2NvcGVzIjoiY29tLmFwaS5jdXN0b21lci5yIiwiZXhwIjoxNjk4NjE2MzE2fQ.sk7cRkSz2q3CD49_oIHF_uTym2_6DwVhSo10DqOAK3g“}
 
 ```
-## View customers, cars and lease data
 
-1. Connect to respective servers to get data
-
-```bash
-  http:localhost:8080/customers
-  http:localhost:8080/cars
-  http:localhost:8080/lease
-
-```
-
-2. Use GET and add the generated token as Bearer Token in authentication tab to display results.
-
-## Manipulate customer data
-
-1. Connect to server 
-
-```http
- http:/localhost:8080/api/customers/
-```
-
-2. Use POST for adding customers.
-
-3. Connect to server
-
-```bash
- http:/localhost:8080/api/customers/id
-```
-
-3. Use PUT for editing customers (Change "id" to desired custmer id number in URL). Use the sample body (JSON format) to enter the data
-
-```javascript
-{"name":“Myname","password":"pass","street":"beta","house":"G1","zip":"D1","place":"leiden","email":“myemail@abc.com","phone":"716878208"}
-
-```
 ## View and manipulate data
 
 
