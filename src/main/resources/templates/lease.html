@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--<html lang="en" xmlns="http://www.w3.org/1999/xhtml" -->
+<!--xmlns:th="http://www.thymeleaf.org">-->
+<html>
+	<head>
+		<title>Lease rate per month for all cars</title>
+	</head>
+		<body>
+			<h1>Lease rate per month for all cars</h1>
+			<h2>The following constants are used for calculating lease rate</h2>
+			<b>Mileage = 45000 km/yr</b>
+			<br/>
+			<b>Duration = 60 months</b>
+			<br/>
+			<b>Interest rate = 4.5 %</b>
+			<br/>
+			<table border="1", class="centerTable">
+				<tr>
+				<td>Id</td>
+				<td>Make</td>
+				<td>Model</td>
+				<td>Version</td>
+				<td>Doors</td>
+				<td>Emission</td>
+				<td>Gross</td>
+				<td>Nett</td>
+				</tr>
+				<tr th:each="cars : ${carList}">
+					<td th:text="${cars.id}"></td>
+					<td th:text="${cars.make}"></td>
+					<td th:text="${cars.model}"></td>
+					<td th:text="${cars.version}"></td>
+					<td th:text="${cars.doors}"></td>
+					<td th:text="${cars.emission}"></td>
+					<td th:text="${cars.gross}"></td>
+					<td th:text="${cars.nett}"></td>
+					</tr>
+			</table>
+			<br/>			
+			<h2> The lease rate per month for cars are as follows -</h2>
+			<tr th:text="${leaseRatePerMonth}"></tr>
+		</body>
+</html>

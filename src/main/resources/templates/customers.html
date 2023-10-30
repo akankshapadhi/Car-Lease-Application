@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Customers in the system</title>
+</head>
+<body>
+	<h1>All customers in the system</h1>
+	<table border="1">
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Password</td>
+			<td>Street</td>
+			<td>House</td>
+			<td>Zip</td>
+			<td>Place</td>
+			<td>Email</td>
+			<td>Phone</td>
+		</tr>
+		<tr th:each="customers : ${customerList}">
+			<td th:text="${customers.id}"></td>
+			<td th:text="${customers.name}"></td>
+			<td th:text="${customers.password}"></td>
+			<td th:text="${customers.street}"></td>
+			<td th:text="${customers.house}"></td>
+			<td th:text="${customers.zip}"></td>
+			<td th:text="${customers.place}"></td>
+			<td th:text="${customers.email}"></td>
+			<td th:text="${customers.phone}"></td>
+		</tr>
+	</table>
+</body>
+</html>
