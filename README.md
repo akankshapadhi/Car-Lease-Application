@@ -101,7 +101,7 @@ Sample Token
 | GET    | /customers | To view customers data|
 | GET    | /cars | To view cars data|
 | GET    | /lease | To view lease data|
-| POST    | /api/customers/ | To add customer data|
+| POST    | /api/customers | To add customer data|
 | PUT    | /api/customers/id |**Change "id" value to desired id of customer**. To edit customer data|
 
 Sample body (JSON format) to enter the customer data
@@ -110,4 +110,7 @@ Sample body (JSON format) to enter the customer data
 {"name":“Myname","password":"pass","street":"beta","house":"G1","zip":"D1","place":"leiden","email":“myemail@abc.com","phone":"716878208"}
 
 ```
-"# Car-Lease-Application" 
+## Car-Lease-Application
+
+
+
