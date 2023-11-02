@@ -21,7 +21,7 @@ Java 17
 
 Spring Boot v2.2.6
 
-MySQL Community Server v8.0.27
+MySQL Community Server v8.0.35
 
 Spring Data JPA
 
@@ -44,20 +44,15 @@ git clone https://github.com/akankshapadhi/Car-Lease-Application.git
 2. Execute command
 
 ```bash
-mvn install
-```
-3. Execute command
-
-```bash
 mvn spring-boot:run
 ```
-4. Open the following URL in POSTMAN
+3. Open the following URL in POSTMAN
 
 ```bash
 localhost:8080/
 ```
 
-5. Configure datasource in 
+4. Configure datasource in 
 ```bash
 main/rescources/application.properties
 ```
@@ -66,7 +61,9 @@ spring.datasource.url = jdbc:mysql://localhost:3306/testdb
 spring.datasource.username = root
 spring.datasource.password = password
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MYSQLDialect
-spring.jpa.hibernate.ddl-auto = update
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.datasource.initialization-mode=always
 ```
 ## User authentication
 
