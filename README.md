@@ -17,7 +17,7 @@ A Car-Lease-Platform API to maintain customer data, vehicle information and calc
 
 ## Technologies
 
-Java 17 
+Java 8
 
 Spring Boot v2.2.6
 
